@@ -12,7 +12,7 @@ $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message
 $headers = "From: noreply@yoursite.com" . "\r\n" .
 "CC: ";
 if($email!=NULL){
-mail($to,$subject,$txt,$headers);
+    mail($to,$subject,$txt,$headers);
 }
 //redirect
 header("Location:thankyou.html");
